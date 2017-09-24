@@ -1,8 +1,8 @@
 projectAsceo
 ============
 
-compte ADMIN: admin adminpass
-compte USER : user userpass
+- compte ADMIN: admin adminpass
+- compte USER : user userpass
 
 Jeu de données:
 
