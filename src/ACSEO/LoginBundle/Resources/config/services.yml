@@ -1,0 +1,4 @@
+services:
+#    ACSEO_login.example:
+#        class: ACSEO\LoginBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

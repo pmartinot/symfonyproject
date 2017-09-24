@@ -1,0 +1,14 @@
+fieldset{
+    width: 500px;
+    padding: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 30px;
+}

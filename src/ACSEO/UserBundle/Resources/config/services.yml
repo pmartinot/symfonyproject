@@ -1,0 +1,4 @@
+services:
+#    ACSEO_user.example:
+#        class: ACSEO\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

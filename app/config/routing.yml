@@ -1,0 +1,14 @@
+ACSEO_login:
+    resource: "@ACSEOLoginBundle/Resources/config/routing.yml"
+    prefix:   /
+
+login:
+    path: /login
+    defaults:
+        _controller: ACSEOUserBundle:Security:login
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout

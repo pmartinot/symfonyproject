@@ -1,0 +1,15 @@
+ACSEO_default:
+    path:     /
+    defaults: { _controller: ACSEOLoginBundle:Default:index }
+
+ACSEO_contact_homepage:
+    path:     /contact
+    defaults: { _controller: ACSEOLoginBundle:Contact:index }
+
+ACSEO_contact_admin:
+    path:     /contact/admin
+    defaults: { _controller: ACSEOLoginBundle:Admin:index }
+
+ACSEO_contact_check:
+    path:     /contact/check/{id}
+    defaults: { _controller: ACSEOLoginBundle:Admin:check }

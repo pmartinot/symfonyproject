@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ asset('css/homepage.css') }}" />
+<html>
+  <head>
+    <title>Contact</title>
+  </head>
+  <body>
+    {% if app.user %}
+      <p>Bonjour, vous êtes <a style="color:green">connecté</a> en tant que {{ app.user.username }}<p>
+    {% else %}
+      <p>Bonjour, vous n'êtes <a style="color:red">pas connecté<a></p>
+    {% endif %}
+    </br>
+    <a href="http://127.0.0.1:8000/login">Se connecter</a> -
+    <a href="http://127.0.0.1:8000/logout">Se déconnecter</a> -
+    <a href="http://127.0.0.1:8000/contact/admin">Partie Admin</a>
+    <h1>Formulaire de contact</h1>
+
+    <fieldset>
+      <legend>Posez votre question!</legend>
+      {{ form(form) }}
+      {% for message in app.session.flashbag.get('info') %}
+        <p style="color:green">{{ message }}</p>
+      {% endfor %}
+    </fieldset>
+
+  </body>
+</html>

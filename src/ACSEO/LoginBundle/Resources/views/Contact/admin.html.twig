@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
+<a href="{{ path('ACSEO_contact_homepage') }}"> Retour page de contact </a>
+</br>
+</br>
+<h1> Partie Admin </h1>
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Contenu</th>
+    <th>Date</th>
+    <th>Contrôlé</th>
+  <tr>
+  {% for contact in listContacts %}
+    <tr>
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.content }}</td>
+      <td>{{ contact.date | date('d/m/Y') }}</td>
+      {% if contact.state %}<td> ✓ </td> {%else%} <td><a href="{{ path('ACSEO_contact_check', {'id': contact.id}) }}"> Valider </a> {% endif %}
+    </tr>
+  {% endfor %}
+</table>
